@@ -1,12 +1,12 @@
 ﻿<template>
-    <div>
+    <div class="ui text container">
         <h1>Weather forecast</h1>
 
         <p>This component demonstrates fetching data from the server.</p>
 
         <p v-if="!forecasts"><em>Loading...</em></p>
 
-        <table class="table" v-if="forecasts">
+        <table class="ui celled table" v-if="forecasts">
             <thead>
                 <tr>
                     <th>Date</th>

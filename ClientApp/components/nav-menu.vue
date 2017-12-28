@@ -1,26 +1,19 @@
 ﻿<template>
-    <div class="main-nav">
-        <div class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" v-on:click="toggleCollapsed">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                <a class="navbar-brand" href="/">Vue2Spa</a>
+    <div class="ui container">
+        <div class="ui vertical inverted sidebar menu left uncover visible">
+            <div class="ui large secondary inverted pointing menu">
+                <a class="toc item" v-on:click="toggleCollapsed">
+                    <i class="sidebar icon"></i>
+                </a>
+                <a class="active item" href="/">Vue2Spa</a>
             </div>
             <div class="clearfix"></div>
             <transition name="slide">
-                <div class="navbar-collapse collapse in" v-show="!collapsed">
-                    <ul class="nav navbar-nav">
-                        <li v-for="route in routes">
-                            <!-- TODO: highlight active link -->
-                            <router-link :to="route.path">
-                                <span :class="route.style"></span> {{ route.display }}
-                            </router-link>
-                        </li>
-                    </ul>
+                <div class="" v-show="!collapsed">
+                    <!-- TODO: highlight active link -->
+                    <router-link v-for="route in routes" :to="route.path" class="item">
+                        <i :class="route.style"></i> {{ route.display }}
+                    </router-link>
                 </div>
             </transition>
         </div>

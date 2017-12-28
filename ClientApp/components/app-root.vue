@@ -1,11 +1,13 @@
 <template>
-    <div id="app" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-3">
+    <div id="app" class="pusher">
+        <div class="ui grid">
+            <div class="three wide column">
                 <nav-menu params="route: route"></nav-menu>
             </div>
-            <div class="col-sm-9">
-                <router-view></router-view>
+            <div class="nine wide column">
+                <div class="ui vertical stripe segment">
+                    <router-view></router-view>
+                </div>
             </div>
         </div>
 

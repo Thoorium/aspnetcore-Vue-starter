@@ -1,5 +1,5 @@
 ﻿<template>
-  <div>
+  <div class="ui text container">
     <h1>Counter</h1>
 
     <p>This is a simple example of a Vue.js component & Vuex</p>
@@ -11,8 +11,8 @@
       Auto count: <strong>{{ autoCount }}</strong>
     </p>
 
-    <button @click="incrementCounter()">Increment</button>
-    <button @click="resetCounter()">Reset</button>
+    <button class="ui primary button" @click="incrementCounter()">Increment</button>
+    <button class="ui button" @click="resetCounter()">Reset</button>
   </div>
 </template>
 

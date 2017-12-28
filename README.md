@@ -27,7 +27,7 @@ _Looking for aspnetcore & Angular 2.x+ Universal starter? [click here](https://g
   - Vuex (State Store)
 - **Webpack 2**
   - HMR (Hot Module Replacement/Reloading)
-- **Bootstrap**
+- **Semantic UI**
 - ...more details to come...
 
 # Prerequisites:
